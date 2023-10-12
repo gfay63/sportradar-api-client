@@ -1,0 +1,28 @@
+{
+  "name": "sportradar-api-client",
+  "version": "1.0.0",
+  "description": "Node and NestJS wrappers for Sportradar feeds",
+  "author": "Greg Fay + OpenAPI-Generator Contributors",
+  "main": "dist/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "docs": "typedoc --out docs src/*.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sports-api",
+    "sportradar",
+    "fantasy-sports"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/axios": "^3.0.0",
+    "@nestjs/common": "^8.0.0",
+    "@nestjs/config": "^3.1.1",
+    "axios": "^1.5.1"
+  },
+  "devDependencies": {
+    "typedoc": "^0.25.2"
+  }
+}
