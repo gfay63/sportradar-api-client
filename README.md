@@ -12,7 +12,7 @@ This package provides a seamless integration with the Sportradar API, allowing d
 
 - **Full Coverage**: This package offers complete access to the Sportradar API. No more partial implementations or missing features.
 - **Optimized for Use**: The refactoring ensures that accessing and using the API is as intuitive and straightforward as possible.
-- **Full documentation**: See [full documentation of the API Specification](YOUR_URL_HERE).
+- **Full documentation**: See [full documentation of the API Specification](https://gfay63.github.io/sportradar-api-client/).
 
 ## 🛠 Installation
 
@@ -127,7 +127,7 @@ Your insights and contributions can make this package even better! Check out our
 
 ## 📖 Documentation
 
-Our library's documentation is generated using TypeDoc, ensuring that you get the most accurate and up-to-date information directly from the source code.
+Our [library's documentation](https://gfay63.github.io/sportradar-api-client/) is generated using TypeDoc, ensuring that you get the most accurate and up-to-date information directly from the source code.
 
 Happy coding! 🎉
 
