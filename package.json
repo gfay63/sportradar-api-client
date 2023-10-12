@@ -4,7 +4,7 @@
   "description": "Node and NestJS wrappers for Sportradar feeds",
   "author": "Greg Fay + OpenAPI-Generator Contributors",
   "main": "dist/index.js",
-  "types": "src/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "docs": "typedoc --out docs src/*.ts",
@@ -13,7 +13,8 @@
   "keywords": [
     "sports-api",
     "sportradar",
-    "fantasy-sports"
+    "fantasy-sports",
+    "nestjs"
   ],
   "license": "MIT",
   "dependencies": {

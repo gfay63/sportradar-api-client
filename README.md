@@ -84,6 +84,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
       inject: [ConfigService],
     }),
   ],
+  exports: [SportradarApiClientModule], 
 })
 export class AppModule {}
 ```
@@ -92,7 +93,49 @@ In the asynchronous configuration example, the ConfigService is used to retrieve
 
 #### Using the Client in Your Service or Controller
 
-After configuration, you can inject the `SportradarMlbApiClientService` (or the respective service for other sports) into your services or controllers:
+After configuration, you can import `SportradarApiClientModule` into your module, then import the appropriate API (e.g. `SportradarMlbApi`) and inject the service `SportradarMlbApi.DefaultSportradarMlbApiService` (or the respective service for other sports) into your services or controllers. Here is an example accessing a few of the MLB API endpoints in a controller:
+
+```ts
+import { Controller, Get, HttpException, HttpStatus } from '@nestjs/common';
+import { Observable } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
+import { SportradarMlbApi } from 'sportradar-api-client';
+
+@Controller('mlb')
+export class MlbController {
+    constructor(private readonly srMlbService: SportradarMlbApi.DefaultSportradarMlbApiService) {}
+
+    @Get('leagueHierarchy')
+    getLeagueHierarchy(): Observable<any> {
+        return this.srMlbService.leagueHierarchy('en', 'json').pipe(
+            map(apiResponse => {
+                if (apiResponse.status !== 200) {
+                    throw new HttpException(apiResponse.data, apiResponse.status);
+                }
+                return apiResponse.data;
+            }),
+            catchError(err => {
+                throw new HttpException(err.message, HttpStatus.INTERNAL_SERVER_ERROR);
+            })
+        );
+    }
+
+    @Get('injuries')
+    getInjuries(): Observable<any> {
+        return this.srMlbService.injuries("en", "json").pipe(
+            map(apiResponse => {
+                if (apiResponse.status !== 200) {
+                    throw new HttpException(apiResponse.data, apiResponse.status);
+                }
+                return apiResponse.data;
+            }),
+            catchError(err => {
+                throw new HttpException(err.message, HttpStatus.INTERNAL_SERVER_ERROR);
+            })
+        );
+    }
+}
+```
 
 ### Regular Node.js Implementation
 
