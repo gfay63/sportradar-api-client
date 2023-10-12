@@ -29,8 +29,6 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
         this.configuration = configuration || this.configuration;
         console.debug('DefaultSportradarMlbApiService(): Configuration:', this.configuration);
         this.basePath = configuration?.basePath || this.basePath;
-        console.debug(`DefaultSportradarMlbApiService(): using basePath ${this.basePath}`); // Remove me
-        console.debug(`DefaultSportradarMlbApiService(): using apiKey ${this.configuration.apiKeys["api_key"]}`); // Remove me
     }
 
     /**
