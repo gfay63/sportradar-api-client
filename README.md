@@ -1,8 +1,25 @@
-# 🎉 Sportradar API Client
+<h1 p align="center">
+🎉 Sportradar API Client
+</h1>
+
+<p align="center">
+    <a href="https://gfay63.github.io/sportradar-api-client/"><b>Documentation & API Specification</b></a> •
+    <a href="https://www.postman.com/sportradar-media-apis?tab=collections"><b>Sportradar Postman Collections</b></a>
+</p>
+
+<div align="center">
+
+[![npm version](https://img.shields.io/npm/v/sportradar-api-client.svg)](https://www.npmjs.com/package/sportradar-api-client)
+[![install size](https://img.shields.io/badge/dynamic/json?url=https://packagephobia.com/v2/api.json?p=sportradar-api-client&query=$.install.pretty&label=install%20size&style=flat-square)](https://packagephobia.now.sh/result?p=sportradar-api-client)
+[![npm downloads](https://img.shields.io/npm/dm/sportradar-api-client.svg?style=flat-square)](https://npm-stat.com/charts.html?package=sportradar-api-client)
+[![Known Vulnerabilities](https://snyk.io/test/npm/sportradar-api-client/badge.svg)](https://snyk.io/test/npm/sportradar-api-client)
+![GitHub top language](https://img.shields.io/github/languages/top/gfay63/sportradar-api-client)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/gfay63)](https://github.com/sponsors/gfay63)
+</div>
 
 Welcome to the comprehensive interface for the Sportradar API Client!
 
-This package provides a seamless integration with the Sportradar API, allowing developers to fetch sports data with ease. It's been refactored and optimized to provide a straightforward experience.
+This package provides a seamless integration with the Sportradar API, allowing developers to fetch sports data with ease. It's been refactored and optimized to provide a straightforward experience. It is derived in part from the [Sportradar Postman Collections](https://www.postman.com/sportradar-media-apis?tab=collections) using Open API v3 [Open API Generator](https://openapi-generator.tech/).
 
 > 🚨 Disclaimer
 >
