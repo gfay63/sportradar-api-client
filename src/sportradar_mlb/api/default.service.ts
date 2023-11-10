@@ -27,7 +27,7 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
 
     constructor(protected httpClient: HttpService, @Optional() configuration: Configuration) {
         this.configuration = configuration || this.configuration;
-        console.debug('DefaultSportradarMlbApiService(): Configuration:', this.configuration);
+        //console.debug('DefaultSportradarMlbApiService(): Configuration:', this.configuration);
         this.basePath = configuration?.basePath || this.basePath;
     }
 
