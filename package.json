@@ -1,6 +1,6 @@
 {
   "name": "sportradar-api-client",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Node and NestJS wrappers for Sportradar feeds",
   "contributors": [
     {
