@@ -74,16 +74,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling dailyBoxscore.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -136,16 +136,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling dailyChangeLog.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -198,16 +198,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling dailySchedule.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -260,16 +260,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling dailySummary.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -322,16 +322,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling dailyTransactions.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -374,16 +374,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling gameBoxscore.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -426,16 +426,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling gameExtendedSummary.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -478,16 +478,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling gameSummary.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -525,16 +525,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling glossary.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -572,16 +572,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling injuries.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -619,16 +619,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling leagueDepthChart.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -666,16 +666,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling leagueHierarchy.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -723,16 +723,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling leagueLeaders.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -780,16 +780,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling leagueSchedule.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -832,16 +832,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling playByPlay.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -884,16 +884,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling playerProfile.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -941,16 +941,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling rankings.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -993,16 +993,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling seasonalPitchMetrics.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -1055,16 +1055,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling seasonalSplits.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -1117,16 +1117,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling seasonalStatistics.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -1169,16 +1169,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling seasonalTransactions.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -1216,16 +1216,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling seasons.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -1273,16 +1273,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling seriesSchedule.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -1330,16 +1330,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling seriesStatistics.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -1382,16 +1382,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling seriesSummary.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -1439,16 +1439,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling standings.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -1496,16 +1496,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling statcastLeaders.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -1548,16 +1548,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling teamDepthCharts.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -1600,16 +1600,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling teamProfile.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -1647,16 +1647,16 @@ export class DefaultSportradarMlbApiService implements DefaultSportradarMlbApiSe
             throw new Error('Required parameter format was null or undefined when calling venues.');
         }
 
-        let headers = { ...this.defaultHeaders };
+        const headers = { ...this.defaultHeaders };
 
         // authentication (apikeyAuth) required
-        let queryParameters = new URLSearchParams();
+        const queryParameters = new URLSearchParams();
         if (this.configuration.apiKeys["api_key"]) {
             queryParameters.append('api_key', this.configuration.apiKeys["api_key"]);
         }
 
         // to determine the Accept header
-        let httpHeaderAccepts: string[] = [
+        const httpHeaderAccepts: string[] = [
             'application/json'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
